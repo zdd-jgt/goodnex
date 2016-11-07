@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery.js"></script>
+		<script src="js/goodne.js"></script>
+	</head>
+	<script>
+	    $(document).ready(function(){
+	        $(".banner").hover(function(){
+	            $(".ban_frame").addClass("ban_frame_a");
+	            $(".banner_h1_bot").addClass("banner_h1_bot_a");
+	            $(".banner_h2_top").addClass("banner_h2_top_a");
+	            $(".banner_h2_bot").addClass("banner_h2_bot_a");
+	        },function(){
+	            $(".ban_frame").removeClass("ban_frame_a");
+	            $(".banner_h1_bot").removeClass("banner_h1_bot_a");
+                $(".banner_h2_top").removeClass("banner_h2_top_a");
+                $(".banner_h2_bot").removeClass("banner_h2_bot_a");
+	        })
+           $(".banner").hover(function(){
+                $(".ban_device1").addClass("ban_device1_a");
+                $(".ban_device2").addClass("ban_device2_a");
+                $(".banner_h1_top1").addClass("banner_h1_top1_a");
+                $(".banner_h1_bot1").addClass("banner_h1_bot1_a");
+                $(".banner_h2_top1").addClass("banner_h2_top1_a");
+                $(".banner_h2_zhong1").addClass("banner_h2_zhong1_a");
+                $(".banner_h2_bot1").addClass("banner_h2_bot1_a");
+            },function(){
+                $(".ban_device1").removeClass("ban_device1_a");
+                $(".ban_device2").removeClass("ban_device2_a");
+                $(".banner_h1_top1").removeClass("banner_h1_top1_a");
+                $(".banner_h1_bot1").removeClass("banner_h1_bot1_a");
+                $(".banner_h2_top1").removeClass("banner_h2_top1_a");
+                $(".banner_h2_zhong1").removeClass("banner_h2_zhong1_a");
+                $(".banner_h2_bot1").removeClass("banner_h2_bot1_a");
+            })
+           $(".banner").hover(function(){
+                $(".ban_pc").addClass("ban_pc_a");
+                $(".ban_log1").addClass("ban_log1_a");
+                $(".ban_x").addClass("ban_x_a");
+                $(".banner_tu_h2").addClass("banner_tu_h2_a");
+                $(".banner_h1_bot2").addClass("banner_h1_bot2_a");
+                $(".banner_h2_top2").addClass("banner_h2_top2_a");
+                $(".banner_h2_bot2").addClass("banner_h2_bot2_a");
+            },function(){
+                $(".ban_pc").removeClass("ban_pc_a");
+                $(".ban_log1").removeClass("ban_log1_a");
+                $(".ban_x").removeClass("ban_x_a");
+                $(".banner_tu_h2").removeClass("banner_tu_h2_a");
+                $(".banner_h1_bot2").removeClass("banner_h1_bot2_a");
+                $(".banner_h2_top2").removeClass("banner_h2_top2_a");
+                $(".banner_h2_bot2").removeClass("banner_h2_bot2_a");
+            })
+	        $(".banner").hover(function(){
+	            $(".ban_haze").addClass("ban_haze_a");
+                $(".ban_cloud1").addClass("ban_cloud1_a");
+                $(".ban_cloud2").addClass("ban_cloud2_a");
+                $(".ban_plane1").addClass("ban_plane1_a");
+                $(".ban_plane2").addClass("ban_plane2_a");
+                $(".banner_h1_bot3").addClass("banner_h1_bot3_a");
+                $(".banner_h2_top3").addClass("banner_h2_top3_a");
+                $(".banner_h2_bot3").addClass("banner_h2_bot3_a");
+            },function(){
+                $(".ban_haze").removeClass("ban_haze_a");
+                $(".ban_cloud1").removeClass("ban_cloud1_a");
+                $(".ban_cloud2").removeClass("ban_cloud2_a");
+                $(".ban_plane1").removeClass("ban_plane1_a");
+                $(".ban_plane2").removeClass("ban_plane2_a");
+                $(".banner_h1_bot3").removeClass("banner_h1_bot3_a");
+                $(".banner_h2_top3").removeClass("banner_h2_top3_a");
+                $(".banner_h2_bot3").removeClass("banner_h2_bot3_a");
+            })
+	        
+	        
+	    })
+	</script>
+	<style>
+	    .banner{
+	        width: 100%;
+	        height: auto;
+	        margin-top: 20px;
+            margin-bottom: 45px;
+            background-color: rgb(246, 246, 246);
+            position: relative;
+            overflow: hidden;
+	    }
+	    .banner .banner_nei{
+	        width: 100%;
+	        height: 400px;
+	        margin: 0 auto;
+            position: relative;
+	    }
+	    .banner .banner_nei .bannner_tu{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background:  rgb(246, 246, 246);
+	    }
+	    .banner .banner_nei .ceng{
+            z-index: 10;
+        }
+	    .banner .banner_nei .bannner_tu .ban_frame{
+	        position: absolute;
+	        left: 0;
+	        top:34px;
+	        width: 510px;
+            height: 365px;
+            opacity: 1;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left:-510px;
+            margin-top: 0px;
+            transition: all 2s linear; 
+            
+	    }
+	    .banner .banner_nei .bannner_tu .ban_frame_a{
+	        transform: translateX(960px);
+	    }
+	    .banner .banner_nei .bannner_tu .banner_h1_bot{
+	        position: absolute;
+	        /*right: 97px;*/
+            right: 645px;
+	        bottom: -70px;
+	        /*bottom: -300px;*/
+	        font-family: "微软雅黑";
+            width: auto;
+            height: auto;
+            font-size: 40px;
+            line-height: 40px;
+            padding: 0px;
+            border-width: 0px;
+            opacity: 1;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left:0;
+            margin-top: 0px;
+            display: block;
+            visibility: visible;
+            transition: all 2s linear;
+	    }
+	    .banner .banner_nei .bannner_tu .banner_h1_bot_a{
+	        transform: translateY(-190px);
+	    }
+	    .banner .banner_nei .bannner_tu .banner_h2_top{
+	        position: absolute;
+	        top: 115px;
+	        /*top:-300px;*/
+            right: -220px;
+            width: auto;
+            height: auto;
+            font-size: 18px;
+            line-height: 18px;
+            padding: 3px 10px;
+            border-width: 0px;
+            opacity: 1;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left:0px;
+            margin-top: 0px;
+            background: #79BE0B;
+            color: #fff;
+            display: block;
+            transition: all 2s linear;
+            visibility: visible;
+	    }
+	    .banner .banner_nei .bannner_tu .banner_h2_top_a{
+            transform: translateX(-884px);
+        }
+	    .banner .banner_nei .bannner_tu .banner_h2_bot{
+	        position: absolute;
+	        top:150px;
+	        /*top:-200px ;*/
+            right:-150px;
+            width: auto;
+            height: auto;
+            background: #79BE0B;
+            font-size: 18px;
+            line-height: 18px;
+            padding: 3px 10px;
+            border-width: 0px;
+            opacity: 1;
+            color: #fff;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left:0px;
+            margin-top: 0px;
+            display: block;
+            visibility: visible;
+            transition: all 2s linear; 
+	    }
+	    .banner .banner_nei .bannner_tu .banner_h2_bot_a{
+            transform: translateX(-879px);
+        }
+	    /*2*/
+	    .banner .banner_nei .bannner_tu .ban_device1{
+            position: absolute;
+            right: 2000px;
+            /*right: 1400px;*/
+            top:90px;
+            width: 315px;
+            height: 255px;
+            opacity: 1;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left:0px;
+            margin-top: 0px;
+            display: block;
+            padding: 0px;
+            visibility: visible;
+            transition: all 1s linear ; 
+        }
+        .banner .banner_nei .bannner_tu .ban_device1_a{
+            transform: translateX(1330px);
+        }
+        .banner .banner_nei .bannner_tu .ban_device2{
+            position: absolute;
+            right: -500px;
+            /*right: -1000px;*/
+            top:23px;
+            width: 285px;
+            height: 354px;
+            opacity: 1;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left:0px;
+            margin-top: 0px;
+            display: block;
+            padding: 0px;
+            visibility: visible;
+            transition: all 1s linear .5s;
+        }
+        .banner .banner_nei .bannner_tu .ban_device2_a{
+            transform:translateX(-1013px) ;
+        }
+        .banner .banner_nei .bannner_tu .banner_h1_top1{
+            position: absolute;
+            top: -200px;
+            /*top: -500px;*/
+            left: 490px;
+            width: auto;
+            height: auto;
+            font-size: 28px;
+            line-height: 28px;
+            padding: 0px;
+            border-width: 0px;
+            opacity: 1;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left: 0px;
+            margin-top:0px;
+            display: block;
+            visibility: visible;
+            transition: all 1s linear .6s;
+        }
+        .banner .banner_nei .bannner_tu .banner_h1_top1_a{
+            transform: translateY(307px);
+        }
+        .banner .banner_nei .bannner_tu .banner_h1_bot1{
+            position: absolute;
+            top: -150px;
+            /*top:-400px;*/
+            left: 490px;
+            font-family: "微软雅黑";
+            width: auto;
+            height: auto;
+            font-size: 40px;
+            line-height: 40px;
+            padding: 0px;
+            border-width: 0px;
+            opacity: 1;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left:0px;
+            margin-top: 0px;
+            display: block;
+            transition: all 1s linear .4s;
+            visibility: visible;
+        }
+        .banner .banner_nei .bannner_tu .banner_h1_bot1_a{
+            transform: translateY(300px);
+        }
+        .banner .banner_nei .bannner_tu .banner_h2_top1{
+            position: absolute;
+            top: 400px;
+            /*top: 500px;*/
+            left:490px;
+            width: auto;
+            height: auto;
+            font-size: 18px;
+            background-color: #79BE0B;
+            color: #fff;
+            line-height: 18px;
+            padding: 3px 10px;
+            border-width: 0px;
+            opacity: 1;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left: 0px;
+            margin-top: 0px;
+            display: block;
+            transition: all 1s linear .4s;
+            visibility: visible;
+        }
+        .banner .banner_nei .bannner_tu .banner_h2_top1_a{
+            transform: translateY(-190px);
+        }
+        .banner .banner_nei .bannner_tu .banner_h2_zhong1{
+            position: absolute;
+            top: 500px;
+            /*top: 600px;*/
+            left: 490px;
+            width: auto;
+            height: auto;
+            font-size: 18px;
+            line-height: 18px;
+            padding: 3px 10px;
+            border-width: 0px;
+            background-color: #79BE0B;
+            color: #fff;
+            opacity: 1;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left: 0px;
+            margin-top: 0px;
+            display: block;
+            transition: all 1s linear .6s;
+            visibility: visible;
+        }
+        .banner .banner_nei .bannner_tu .banner_h2_zhong1_a{
+            transform: translateY(-257px);
+        }
+        .banner .banner_nei .bannner_tu .banner_h2_bot1{
+            position: absolute;
+            top: 600px;
+            /*top: 700px;*/
+            left: 490px;
+            width: auto;
+            height: auto;
+            font-size: 18px;
+            background-color: #79BE0B;
+            color: #fff;
+            line-height: 18px;
+            padding: 3px 10px;
+            border-width: 0px;
+            opacity: 1;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left: 0px;
+            margin-top: 0px;
+            display: block;
+            visibility: visible;
+            transition: all 1s linear .8s;
+        }
+        .banner .banner_nei .bannner_tu .banner_h2_bot1_a{
+            transform: translateY(-324px);
+        }
+        /*3*/
+        .banner .banner_nei .bannner_tu .ban_pc{
+            position: absolute;
+            top: 410px;
+           /*top: 400px;*/
+            left: 491px;
+            width: 618px;
+            height: 312px;
+            padding: 0px;
+            border-width: 0px;
+            opacity: 1;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left: 0px;
+            margin-top: 0px;
+            display: block;
+            visibility: visible;
+            transition: all 1s linear;
+        }
+        .banner .banner_nei .bannner_tu .ban_pc_a{
+            transform: translateY(-363px);
+        }
+        .banner .banner_nei .bannner_tu .ban_log1{
+            position: absolute;
+            top: 95px;
+            /*top: 50px;*/
+            left:668px;
+            width: 206px;
+            height: 59px;
+            padding: 0px;
+            border-width: 0px;
+            opacity: 0;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left: 0px;
+            margin-top: 0px;
+            display: block;
+            visibility: visible;
+            transition: all 1s linear;
+        }
+        .banner .banner_nei .bannner_tu .ban_log1_a{
+            transform: translateY(55px);
+            opacity: 1;
+        }
+        .banner .banner_nei .bannner_tu .ban_x{
+            position: absolute;
+            top: -500px;
+            /*top:-300px*/
+            left: 877px;
+            width: 59px;
+            height: 59px;
+            padding: 0px;
+            border-width: 0px;
+            opacity: 1;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left: 0px;
+            margin-top: 0px;
+            display: block;
+            visibility: visible;
+            transition: all 1s linear .3s;
+        }
+        .banner .banner_nei .bannner_tu .ban_x_a{
+            transform: translateY(651px);
+        }
+        .banner .banner_nei .bannner_tu .banner_tu_h2{
+            position: absolute;
+            top: 255px;
+            /*top:320px;*/
+            left: 675px;
+            width: auto;
+            height: auto;
+            font-size: 18px;
+            line-height: 18px;
+            padding: 0px;
+            border-width: 0px;
+            color: #b2b2b2;
+            text-transform: uppercase;
+            opacity: 0;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left: 0px;
+            margin-top: 0px;
+            display: block;
+            visibility: visible;
+            transition: all 1s linear .3s;
+        }
+        .banner .banner_nei .bannner_tu .banner_tu_h2_a{
+            transform: translateY(-41px);
+            opacity: 1;
+        }
+        .banner .banner_nei .bannner_tu .banner_h1_bot2{
+            position: absolute;
+            top: 220px;
+            right: -250px;
+            /*right: -1000px;*/
+            width: auto;
+            height: auto;
+            font-size: 40px;
+            line-height: 40px;
+            padding: 0px;
+            font-family: "微软雅黑";
+            border-width: 0px;
+            opacity:1;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left: 0px;
+            margin-top: 0px;
+            display: block;
+            visibility: visible;
+            transition: all 1s linear 1s;
+        }
+        .banner .banner_nei .bannner_tu .banner_h1_bot2_a{
+            transform: translateX(-853px);
+        }
+        .banner .banner_nei .bannner_tu .banner_h2_top2{
+            position: absolute;
+            top: -50px;
+            /*top:-500px;*/
+            right:635px;
+            width: auto;
+            height: auto;
+            font-size: 18px;
+            line-height: 18px;
+            padding: 3px 10px;
+            border-width: 0px;
+            opacity:1;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left: 0px;
+            margin-top: 0px;
+            background: #79BE0B;
+            color: #fff;
+            display: block;
+            visibility: visible;
+            transition: all 1s linear 1s;
+        }
+        .banner .banner_nei .bannner_tu .banner_h2_top2_a{
+            transform: translateY(224px);
+        }
+        .banner .banner_nei .bannner_tu .banner_h2_bot2{
+            position: absolute;
+            top: -150px;
+            /*top: -700px;*/
+            right: 571px;
+            width: auto;
+            height: auto;
+            font-size: 18px;
+            line-height: 18px;
+            padding: 3px 10px;
+            border-width: 0px;
+            opacity: 1;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left: 0px;
+            margin-top: 0px;
+            background: #79BE0B;
+            color: #fff;
+            display: block;
+            display: block;
+            visibility: visible;
+            transition: all 1s linear 1s;
+        }
+        .banner .banner_nei .bannner_tu .banner_h2_bot2_a{
+            transform: translateY(291px);
+        }
+        /*4*/
+       .banner .banner_nei .bannner_tu .ban_haze{
+           position: absolute;
+            top: 0px;
+            right: 27%;
+           /*right: -100px;*/
+            width: 940px;
+            height: 0;
+            padding: 0px;
+            border-width: 0px;
+            opacity: 1;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left: 0px;
+            margin-top: 0px;
+            display: block;
+            visibility: visible;
+            transition: all 1s linear;
+       }
+       .banner .banner_nei .bannner_tu .ban_haze_a{
+           height: 350px;
+       }
+        .banner .banner_nei .bannner_tu .ban_cloud1{
+            position: absolute;
+            top: 27px;
+            left:12%;
+            /*left: 260px;*/
+            width: 400px;
+            height: 220px;
+            padding: 0px;
+            border-width: 0px;
+            opacity: 0;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left: 0px;
+            margin-top: 0px;
+            display: block;
+            visibility: visible;
+            transition: all 1s linear;
+        }
+        .banner .banner_nei .bannner_tu .ban_cloud1_a{
+            opacity: 1;
+            left: 30%;
+        }
+        .banner .banner_nei .bannner_tu .ban_cloud2{
+            position: absolute;
+            top: 20px;
+            left: 58%;
+           /*left: 180px;*/
+            width: 314px;
+            height: 220px;
+            padding: 0px;
+            border-width: 0px;
+            opacity: 0;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left: 0px;
+            margin-top: 0px;
+            display: block;
+            visibility: visible;
+            transition: all 1s linear;
+        }
+        .banner .banner_nei .bannner_tu .ban_cloud2_a{
+            opacity: 1;
+            left: 58%;
+        }
+        .banner .banner_nei .bannner_tu .ban_plane1{
+            position: absolute;
+            top: 25px;
+            right: -16%;
+           /*right: -550px;*/
+            width: 311px;
+            height: 233px;
+            padding: 0px;
+            border-width: 0px;
+            opacity: 1;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left: 0px;
+            margin-top: 0px;
+            display: block;
+            visibility: visible;
+            transition: all 1s linear .1s;
+        }
+        .banner .banner_nei .bannner_tu .ban_plane1_a{
+            right: 26%;
+        }
+        .banner .banner_nei .bannner_tu .ban_plane2{
+            position: absolute;
+            top: 100px;
+            right:-25%;
+           /*right: -500px;*/
+            width: 483px;
+            height: 335px;
+            padding: 0px;
+            border-width: 0px;
+            opacity:1;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left:0px;
+            margin-top: 0px;
+            display: block;
+            visibility: visible;
+            transition: all 1s linear .1s;
+        }
+        .banner .banner_nei .bannner_tu .ban_plane2_a{
+            right: 29%;
+        }
+        .banner .banner_nei .bannner_tu .banner_h1_bot3{
+            position: absolute;
+            top: 191px;
+            left: -20%;
+            /*left: -1000px;*/
+            width: auto;
+            height: auto;
+            font-size: 40px;
+            line-height: 40px;
+            padding: 0px;
+            border-width: 0px;
+            opacity: 1;
+            font-family: "微软雅黑";
+            transform: rotate(0deg) scale(1, 1);
+            margin-left: 0px;
+            margin-top: 0px;
+            display: block;
+            visibility: visible;
+            transition: all 1s linear .5s;
+        }
+        .banner .banner_nei .bannner_tu .banner_h1_bot3_a{
+            left: 28%;
+        }
+        .banner .banner_nei .bannner_tu .banner_h2_top3{
+            position: absolute;
+            top:100%;
+            /*top: 500px;*/
+            left: 28%;
+            width: auto;
+            height: auto;
+            font-size: 18px;
+            line-height: 18px;
+            padding: 3px 10px;
+            border-width: 0px;
+            opacity: 1;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left: 0px;
+            margin-top: 0px;
+            background-color: #79BE0B;
+            color: #fff;
+            display: block;
+            visibility: visible;
+            transition: all 1s linear .5s;
+        }
+        .banner .banner_nei .bannner_tu .banner_h2_top3_a{
+            top:63%;
+        }
+        .banner .banner_nei .bannner_tu .banner_h2_bot3{
+            position: absolute;
+            top: 150%;
+            /*top: 650px;*/
+            left: 28%;
+            width: auto;
+            height: auto;
+            font-size: 18px;
+            line-height: 18px;
+            padding: 3px 10px;
+            border-width: 0px;
+            opacity: 1;
+            transform: rotate(0deg) scale(1, 1);
+            margin-left: 0px;
+            margin-top: 0px;
+            background-color: #79BE0B;
+            color: #fff;
+            display: block;
+            visibility: visible;
+            transition: all 1s linear .5s;
+        }
+        .banner .banner_nei .bannner_tu .banner_h2_bot3_a{
+            top: 71%;
+        }
+        .banner .ban_left{
+            z-index: 10000;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            display: block;
+            width: 50px;
+            height: 80px;
+            margin-top: -40px;
+            font-size: 30px;
+            line-height: 80px;
+            text-align: center;
+            color: #fff;
+            background: rgba(0,0,0,0.8);
+        }
+        .banner .ban_right{
+            z-index: 10000;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            display: block;
+            width: 50px;
+            height: 80px;
+            margin-top: -40px;
+            font-size: 30px;
+            line-height: 80px;
+            text-align: center;
+            color: #fff;
+            background: rgba(0,0,0,0.8);
+        }
+	</style>
+	<body>
+	    <div class="banner">
+	        <div class="banner_nei">
+	            <div class="bannner_tu ceng" >
+	                <img src="img/frame.png" class="ban_frame" alt="" />
+	                <h1 class="banner_h1_bot">It's so Easy!</h1>
+	                <h2 class="banner_h2_top">You Can Add Any Video</h2>
+                    <h2 class="banner_h2_bot">to Your Slides</h2>
+	            </div>
+	            <div class="bannner_tu" >
+	                <img src="img/device_horizontal.png" class="ban_device1" alt="" />
+	                <img src="img/device_vertical.png" alt=""  class="ban_device2"/>
+	                <h2 class="banner_h1_top1">The Smartest and Powerful</h2>
+                    <h1 class="banner_h1_bot1">LayerSlider</h1>
+                    <h2 class="banner_h2_top1">Working by Reading Your Minds,</h2>
+                    <h2 class="banner_h2_zhong1">Feeling Your Emotions</h2>
+                    <h2 class="banner_h2_bot1">and Releasing Your Imagination</h2>
+	            </div>
+	            <div class="bannner_tu" >
+	                <img src="img/pc.png" class="ban_pc" alt="" />
+	                <img src="img/logo1.png" class="ban_log1" alt="" />
+	                <img src="img/x.png"  class="ban_x" alt="" />
+	                <h2 class="banner_tu_h2">Premium HTML5 Template</h2>
+                    <h1 class="banner_h1_bot2">Just Feel It!</h1>
+                    <h2 class="banner_h2_top2">You Enjoy Your Life</h2>
+                    <h2 class="banner_h2_bot2">Here is Everything to Make </h2>
+	            </div>
+	            <div class="bannner_tu" >
+	                <img src="img/haze.png" class="ban_haze" alt="" />
+	                <img src="img/cloud_1.png" class="ban_cloud1" alt="" />
+	                <img src="img/cloud_2.png" class="ban_cloud2" alt="" />
+	                <img src="img/plane_2.png" class="ban_plane1" alt="" />
+	                <img src="img/plane_1.png" class="ban_plane2" alt="" />
+                    <h1 class="banner_h1_bot3">Incredibly Clean</h1>
+                    <h2 class="banner_h2_top3">and Amazingly Multifunctional </h2>
+                    <h2 class="banner_h2_bot3">Fully Responsive Template! </h2>
+	            </div>   
+	        </div>
+	        <a href="javascript:;" class="ban_left"><</a>
+	        <a href="javascript:;" class="ban_right">></a>
+	    </div>
+	</body>
+</html>
